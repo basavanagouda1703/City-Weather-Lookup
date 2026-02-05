@@ -51,8 +51,8 @@ async function getWeather() {
     weatherResult.innerHTML = `
       <div class="weather-card">
         <h2>${name}, ${country}</h2>
-        <p>🌡 <strong>Temperature:</strong> ${temperature} °C</p>
-        <p>🌬 <strong>Windspeed:</strong> ${windspeed} km/h</p>
+        <p><strong>Temperature:</strong> ${temperature} °C</p>
+        <p><strong>Windspeed:</strong> ${windspeed} km/h</p>
       </div>
     `;
   } catch (error) {
@@ -63,3 +63,4 @@ async function getWeather() {
 function showError(message) {
   weatherResult.innerHTML = `<p class="error">${message}</p>`;
 }
+
